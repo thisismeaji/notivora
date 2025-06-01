@@ -53,6 +53,7 @@ body {
   color: var(--foreground);
   height: 500vh;
   position: relative;
+  width: 100%;
 }
 
 header {
