@@ -111,7 +111,7 @@ img {
 
 @media screen and (max-width: 786px) {
   img {
-    aspect-ratio: 16/14;
+    aspect-ratio: 16/16;
   }
 
   .meta {
@@ -120,6 +120,8 @@ img {
     bottom: 0;
     padding: 1rem;
     max-width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .navCarousel {
