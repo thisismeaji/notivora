@@ -1,6 +1,6 @@
 const track = document.getElementById("carouselTrack");
 const buttons = document.querySelectorAll("#navCarousel button");
-const metaParagraphs = document.querySelectorAll(".meta p");
+const metaParagraphs = document.querySelectorAll(".meta > p");
 
 const slidesCount = buttons.length; // jumlah slide asli (exclude clone)
 let currentIndex = 1; // start dari slide asli pertama (index 1 karena index 0 clone terakhir)
