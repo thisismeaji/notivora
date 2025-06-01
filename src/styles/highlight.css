@@ -1,0 +1,102 @@
+section {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  padding: 1rem;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.carousel-track {
+  display: flex;
+  user-select: none;
+  -webkit-user-drag: none;
+  gap: 1rem;
+}
+
+.carousel-track.grabbing {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+
+.card {
+  min-width: 100%;
+  position: relative;
+  user-select: none;
+  -webkit-user-drag: none;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 5px;
+  display: block;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.meta {
+  position: absolute;
+  left: 2rem;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 5;
+  /* From https://css.glass */
+  background: rgba(16, 16, 16, 0.425);
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 60%;
+}
+
+.meta span {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.navCarousel {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  display: flex;
+  gap: 5px;
+}
+
+.navCarousel > button {
+  width: 10px;
+  height: 10px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navCarousel > button.active,
+.navCarousel > button:hover {
+  background-color: var(--hover);
+}
+
+@media screen and (min-width: 786px) and (max-width: 1080px) {
+  .meta {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .meta {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 1rem;
+    max-width: 100%;
+  }
+}
