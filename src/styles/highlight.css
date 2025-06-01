@@ -102,7 +102,7 @@ img {
 
 @media screen and (max-width: 786px) {
   img {
-    aspect-ratio: 16/12;
+    aspect-ratio: 16/16;
   }
 
   .meta {
