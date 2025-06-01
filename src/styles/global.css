@@ -79,12 +79,34 @@ h2 {
   font-size: 32px;
 }
 
+li,
+a,
+p {
+  font-size: 16px;
+}
+
+button {
+  font-size: 14px;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
 @media screen and (min-width: 786px) and (max-width: 1080px) {
   h2 {
     font-size: 26px;
   }
   p {
     font-size: 14px;
+  }
+
+  li,
+  a,
+  p {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 12px;
   }
 }
 
@@ -93,7 +115,13 @@ h2 {
     font-size: 20px;
   }
 
+  li,
+  a,
   p {
     font-size: 12px;
+  }
+
+  button {
+    font-size: 10px;
   }
 }
