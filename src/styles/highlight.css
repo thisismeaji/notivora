@@ -92,6 +92,10 @@ img {
 }
 
 @media screen and (max-width: 786px) {
+  img {
+    aspect-ratio: 16/10;
+  }
+
   .meta {
     left: 1rem;
     right: 1rem;
