@@ -98,6 +98,10 @@ img {
     top: 1.5rem;
     right: 1.5rem;
   }
+
+  img {
+    aspect-ratio: 16/12;
+  }
 }
 
 @media screen and (max-width: 786px) {
