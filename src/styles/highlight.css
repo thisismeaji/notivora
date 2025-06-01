@@ -99,8 +99,13 @@ img {
     right: 1.5rem;
   }
 
-  img {
-    aspect-ratio: 16/12;
+  .navCarousel {
+    gap: 4px;
+  }
+
+  .navCarousel > button {
+    width: 8px;
+    height: 8px;
   }
 }
 
@@ -120,5 +125,14 @@ img {
   .navCarousel {
     top: 1rem;
     right: 1rem;
+  }
+
+  .navCarousel {
+    gap: 3px;
+  }
+
+  .navCarousel > button {
+    width: 6px;
+    height: 6px;
   }
 }
